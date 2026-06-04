@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+data/
+outputs/
+logs/
+
+.env
+*.env
+*.key
+*.token
+
+.DS_Store
