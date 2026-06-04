@@ -1,0 +1,10 @@
+mode: inference_next1
+dataset: toolbench
+prediction_file: null
+test_model: gemini-2.5-flash
+eval_model: gemini-2.5-pro
+max_samples: 10
+test_max_tokens: 64000
+eval_max_tokens: 64000
+output_dir: test_new_results
+resume: true

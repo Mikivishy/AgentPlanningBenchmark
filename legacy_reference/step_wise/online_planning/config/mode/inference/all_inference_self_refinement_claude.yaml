@@ -1,0 +1,84 @@
+batch_mode: true
+max_workers: 32
+output_dir: eval_results
+
+tests:
+  - name: gaia_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: gaia
+    test_model: qwen3vl-235B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: framethinker_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: framethinker
+    test_model: qwen3vl-235B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: gta_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: gta
+    test_model: qwen3vl-235B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: opencua_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: opencua
+    test_model: qwen3vl-235B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: toolbench_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: toolbench
+    test_model: qwen3vl-235B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_doc_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: skywork_doc
+    test_model: qwen3vl-235B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_excel_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: skywork_excel
+    test_model: qwen3vl-235B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_normal_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: skywork_normal
+    test_model: qwen3vl-235B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_ppt_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: skywork_ppt
+    test_model: qwen3vl-235B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_train_qwen3vl_inference_self_refinement_claude
+    mode: inference_self_refinement_claude
+    dataset: skywork_train
+    test_model: qwen3vl-235B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true

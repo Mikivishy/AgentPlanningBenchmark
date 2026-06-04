@@ -1,0 +1,95 @@
+# Batch Configuration: Gemini-2.5-Pro Next2 Tests Only
+batch_mode: true
+max_workers: 2
+output_dir: eval_results
+
+tests:
+  - name: gemini_pro_next2_gaia
+    mode: pipeline_next2
+    dataset: gaia
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_gta
+    mode: pipeline_next2
+    dataset: gta
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_opencua
+    mode: pipeline_next2
+    dataset: opencua
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_framethinker
+    mode: pipeline_next2
+    dataset: framethinker
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_skywork_doc
+    mode: pipeline_next2
+    dataset: skywork_doc
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_skywork_excel
+    mode: pipeline_next2
+    dataset: skywork_excel
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_skywork_normal
+    mode: pipeline_next2
+    dataset: skywork_normal
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_skywork_train
+    mode: pipeline_next2
+    dataset: skywork_train
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gemini_pro_next2_toolbench
+    mode: pipeline_next2
+    dataset: toolbench
+    test_model: gemini-2.5-pro
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true

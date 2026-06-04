@@ -1,0 +1,12 @@
+# Example: Inference Only Configuration
+
+mode: evaluation_next1
+dataset: opencua
+prediction_file: test_new_results/predictions/gemini-2_5-pro/next1/opencua_predictions_20251112_115042.json
+test_model: gemini-2.5-pro
+eval_model: gemini-2.5-pro
+max_samples: 1
+test_max_tokens: 64000
+eval_max_tokens: 64000
+output_dir: test_new_results
+resume: true

@@ -1,0 +1,11 @@
+eval_pipeline:
+  model: "gpt-5"
+  eval_model: "qwen3vl-235B"
+  prediction_mode: "self_refinement"
+  eval_dir: "eval_results/evaluations/gpt-5/qwen3vl-235B/self_refinement"
+  max_samples: 5
+  resume: false
+  datasets:
+    - "skywork_excel"
+    - "skywork_ppt"
+    - "gta"

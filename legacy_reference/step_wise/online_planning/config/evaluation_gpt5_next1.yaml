@@ -1,0 +1,105 @@
+# Batch Configuration: GPT-5 Evaluation Next1 for All Datasets
+# This configuration evaluates GPT-5 model predictions in next1 mode across all available datasets
+batch_mode: true
+max_workers: 8
+output_dir: eval_results
+
+tests:
+  - name: gpt5_evaluation_next1_gaia
+    mode: evaluation_next1
+    dataset: gaia
+    prediction_file: eval_results/predictions/gaia_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_gta
+    mode: evaluation_next1
+    dataset: gta
+    prediction_file: eval_results/predictions/gta_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_opencua
+    mode: evaluation_next1
+    dataset: opencua
+    prediction_file: eval_results/predictions/opencua_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_framethinker
+    mode: evaluation_next1
+    dataset: framethinker
+    prediction_file: eval_results/predictions/framethinker_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_skywork_doc
+    mode: evaluation_next1
+    dataset: skywork_doc
+    prediction_file: eval_results/predictions/skywork_doc_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_skywork_excel
+    mode: evaluation_next1
+    dataset: skywork_excel
+    prediction_file: eval_results/predictions/skywork_excel_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_skywork_normal
+    mode: evaluation_next1
+    dataset: skywork_normal
+    prediction_file: eval_results/predictions/skywork_normal_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_skywork_train
+    mode: evaluation_next1
+    dataset: skywork_train
+    prediction_file: eval_results/predictions/skywork_train_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt5_evaluation_next1_toolbench
+    mode: evaluation_next1
+    dataset: toolbench
+    prediction_file: eval_results/predictions/toolbench_gpt-5_next1_predictions.json
+    test_model: null
+    eval_model: gemini-2.5-pro
+    max_samples: null
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true

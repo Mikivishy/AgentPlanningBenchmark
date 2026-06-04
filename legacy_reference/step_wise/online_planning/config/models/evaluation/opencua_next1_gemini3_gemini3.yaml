@@ -1,0 +1,17 @@
+# OpenCUA Next1 evaluation configuration for gemini-3-pro-preview
+# Uses gpt-5 as the evaluation model
+
+batch_mode: true
+max_workers: 32
+output_dir: eval_results
+tests:
+- name: opencua_gemini3_pro_next1
+  mode: evaluation_next1
+  dataset: opencua
+  test_model: gemini-3-pro-preview
+  eval_model: gemini-3-pro-preview
+  prediction_file: null
+  max_samples: 100
+  test_max_tokens: 64000
+  eval_max_tokens: 64000
+  resume: true

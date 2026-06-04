@@ -1,0 +1,9 @@
+name: gaia_self_refinement_pipeline
+mode: inference_self_refinement
+dataset: gaia
+test_model: gemini-2.5-flash
+eval_model: gpt-5
+max_samples: 5
+test_max_tokens: 64000
+eval_max_tokens: 64000
+resume: true

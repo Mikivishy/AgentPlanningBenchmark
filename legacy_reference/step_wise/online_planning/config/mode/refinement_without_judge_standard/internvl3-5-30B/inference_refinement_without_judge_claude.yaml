@@ -1,0 +1,84 @@
+batch_mode: true
+max_workers: 32
+output_dir: eval_results
+
+tests:
+  - name: gaia_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: gaia
+    test_model: internvl3-5-30B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: framethinker_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: framethinker
+    test_model: internvl3-5-30B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: gta_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: gta
+    test_model: internvl3-5-30B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: opencua_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: opencua
+    test_model: internvl3-5-30B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: toolbench_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: toolbench
+    test_model: internvl3-5-30B
+    max_samples: 25
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_doc_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: skywork_doc
+    test_model: internvl3-5-30B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_excel_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: skywork_excel
+    test_model: internvl3-5-30B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_normal_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: skywork_normal
+    test_model: internvl3-5-30B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_ppt_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: skywork_ppt
+    test_model: internvl3-5-30B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true
+
+  - name: skywork_train_internvl_30b_inference_refinement_without_judge_claude
+    mode: inference_refinement_without_judge_claude
+    dataset: skywork_train
+    test_model: internvl3-5-30B
+    max_samples: 5
+    test_max_tokens: 12800
+    resume: true

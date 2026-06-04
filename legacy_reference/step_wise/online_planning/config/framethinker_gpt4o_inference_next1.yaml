@@ -1,0 +1,22 @@
+# Batch inference configuration: generate predictions for multiple test models on the framethinker dataset (Next1 variant).
+#
+# Usage: place this file in `eval/online_planning/config/inference/` and run the project's runner that reads these configs.
+# This file runs inference (Next1) for a set of common test models and writes outputs to `output_dir`.
+#
+# NOTE: keep `prediction_file: null` to let the runner decide per-run filenames under `output_dir` unless you
+# want to set explicit filenames for each test entry.
+batch_mode: true
+max_workers: 1
+output_dir: eval_results_test
+
+tests:
+  - name: framethinker_gpt4o_next1
+    mode: inference_next1
+    dataset: framethinker
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    prediction_file: null
+    max_samples: 10
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true

@@ -1,0 +1,96 @@
+# Batch Configuration: GPT-4o Inference Next1 for All Datasets
+# This configuration runs GPT-4o model inference in next1 mode across all available datasets
+batch_mode: true
+max_workers: 8
+output_dir: eval_results
+
+tests:
+  - name: gpt4o_inference_next1_gaia
+    mode: inference_next1
+    dataset: gaia
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 10
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_gta
+    mode: inference_next1
+    dataset: gta
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 10
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_opencua
+    mode: inference_next1
+    dataset: opencua
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 10
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_framethinker
+    mode: inference_next1
+    dataset: framethinker
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 10
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_skywork_doc
+    mode: inference_next1
+    dataset: skywork_doc
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 2
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_skywork_excel
+    mode: inference_next1
+    dataset: skywork_excel
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 2
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_skywork_normal
+    mode: inference_next1
+    dataset: skywork_normal
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 3
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_skywork_train
+    mode: inference_next1
+    dataset: skywork_train
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 3
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gpt4o_inference_next1_toolbench
+    mode: inference_next1
+    dataset: toolbench
+    test_model: gpt-4o
+    eval_model: gemini-2.5-pro
+    max_samples: 10
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true

@@ -1,0 +1,15 @@
+
+batch_mode: true
+max_workers: 32
+output_dir: eval_results
+tests:
+- name: gta_claude4_5_next3_eval
+  mode: evaluation_next3
+  dataset: gta
+  test_model: anthropic/claude-sonnet-4.5
+  eval_model: gpt-5
+  prediction_file: null
+  max_samples: 300
+  test_max_tokens: 64000
+  eval_max_tokens: 64000
+  resume: true

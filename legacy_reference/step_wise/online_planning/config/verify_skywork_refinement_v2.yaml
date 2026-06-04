@@ -1,0 +1,23 @@
+- name: verify_skywork_excel
+  mode: pipeline_self_refinement
+  dataset: skywork_excel
+  test_model: gpt-5
+  eval_model: qwen3vl-235B
+  max_samples: 5
+  resume: false
+
+- name: verify_skywork_ppt
+  mode: pipeline_self_refinement
+  dataset: skywork_ppt
+  test_model: gpt-5
+  eval_model: qwen3vl-235B
+  max_samples: 5
+  resume: false
+
+- name: verify_gta
+  mode: pipeline_self_refinement
+  dataset: gta
+  test_model: gpt-5
+  eval_model: qwen3vl-235B
+  max_samples: 5
+  resume: false

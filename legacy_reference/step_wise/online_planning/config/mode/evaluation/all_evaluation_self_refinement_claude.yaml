@@ -1,0 +1,94 @@
+batch_mode: true
+max_workers: 16
+output_dir: eval_results
+
+tests:
+  - name: gaia_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: gaia
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: framethinker_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: framethinker
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gta_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: gta
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: opencua_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: opencua
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: toolbench_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: toolbench
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_doc_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: skywork_doc
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_excel_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: skywork_excel
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_normal_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: skywork_normal
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_ppt_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: skywork_ppt
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_train_gpt5_evaluation_self_refinement_claude
+    mode: evaluation_self_refinement_claude
+    dataset: skywork_train
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    eval_max_tokens: 64000
+    resume: true

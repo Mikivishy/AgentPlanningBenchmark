@@ -1,0 +1,11 @@
+# Example: Evaluation Only Configuration
+
+mode: evaluation_next1
+dataset: gta  # Not needed for evaluation-only mode
+test_model: gemini-2.5-flash
+eval_model: gemini-2.5-pro
+max_samples: 5
+test_max_tokens: 64000
+eval_max_tokens: 64000
+output_dir: eval_results
+resume: false

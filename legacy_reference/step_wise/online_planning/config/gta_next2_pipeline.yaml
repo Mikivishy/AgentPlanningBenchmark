@@ -1,0 +1,12 @@
+# Example: GTA Dataset - Next2 Pipeline Configuration
+
+mode: pipeline_next2
+dataset: gta
+prediction_file: null
+test_model: claude-sonnet-4-20250514
+eval_model: gemini-2.5-pro
+max_samples: 100  # Limit to 100 samples for testing
+test_max_tokens: 64000
+eval_max_tokens: 64000
+output_dir: eval_results
+resume: true

@@ -1,0 +1,15 @@
+# Batch Configuration: Gemini-2.0-Flash Next3 Tests Only
+batch_mode: true
+max_workers: 8
+output_dir: eval_results
+
+tests:
+  - name: gemini_flash_next3_opencua
+    mode: pipeline_next3
+    dataset: opencua
+    test_model: gemini-2.5-flash
+    eval_model: gemini-2.5-pro
+    max_samples: 10
+    test_max_tokens: 64000
+    eval_max_tokens: 64000
+    resume: true

@@ -1,0 +1,114 @@
+batch_mode: true
+max_workers: 32
+output_dir: eval_results
+
+tests:
+  - name: gaia_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: gaia
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: framethinker_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: framethinker
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: gta_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: gta
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: opencua_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: opencua
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: toolbench_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: toolbench
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 25
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_doc_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: skywork_doc
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_excel_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: skywork_excel
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_normal_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: skywork_normal
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_ppt_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: skywork_ppt
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true
+
+  - name: skywork_train_qwen3vl_235b_evaluation_refinement_without_judge
+    mode: evaluation_refinement_without_judge
+    dataset: skywork_train
+    prediction_file: null
+    test_model: qwen3vl-235B
+    eval_model: gpt-5
+    max_samples: 5
+    test_max_tokens: 12800
+    eval_max_tokens: 64000
+    resume: true

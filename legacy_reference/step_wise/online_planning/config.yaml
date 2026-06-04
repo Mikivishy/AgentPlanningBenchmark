@@ -1,0 +1,33 @@
+# Online Planning Evaluation Configuration
+
+# Execution mode: inference, evaluation, pipeline, inference_next2, evaluation_next2, pipeline_next2
+mode: pipeline
+
+# Dataset to evaluate (required for inference and pipeline modes)
+# Options: framethinker, gaia, gta, opencua, skywork, skywork_doc, skywork_excel, 
+#          skywork_normal, skywork_train, toolbench
+dataset: gaia
+
+# Path to prediction file (required for evaluation mode)
+prediction_file: null
+
+# Test model name
+test_model: claude-sonnet-4-20250514
+
+# Evaluation model name
+eval_model: gemini-3-pro-preview
+
+# Maximum number of samples to evaluate (null for all)
+max_samples: null
+
+# Maximum tokens for test model generation
+test_max_tokens: 64000
+
+# Maximum tokens for eval model generation
+eval_max_tokens: 64000
+
+# Output directory
+output_dir: eval_results
+
+# Resume from existing predictions
+resume: true

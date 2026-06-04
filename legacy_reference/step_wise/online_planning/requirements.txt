@@ -1,0 +1,8 @@
+# Core dependencies
+openai>=1.0.0
+pyyaml>=6.0.0
+
+# Optional: For local development and testing
+# pytest>=7.0.0
+# black>=23.0.0
+# flake8>=6.0.0

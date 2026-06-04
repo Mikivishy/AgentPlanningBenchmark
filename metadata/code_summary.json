@@ -1,16 +1,20 @@
 {
-  "arxiv": "https://arxiv.org/abs/2606.04874",
-  "canonical_entrypoint": "evaluation/run_benchmark.py",
-  "code_only": true,
-  "dataset": "https://huggingface.co/datasets/Mikivis/AgentPlanningbBenchmark",
+  "dataset_repo": "Mikivis/AgentPlanningbBenchmark",
+  "paper": "https://arxiv.org/abs/2606.04874",
+  "supported_splits": {
+    "holistic_planning": 1109,
+    "holistic_tool_extraneous": 750,
+    "holistic_unsolvable": 400,
+    "step_wise_planning": 900,
+    "step_wise_tool_extraneous": 750,
+    "step_wise_tool_broken": 300
+  },
+  "entrypoints": {
+    "all": "evaluation/run_benchmark.py",
+    "holistic_offline_all": "evaluation/tasks/offline_all.py",
+    "step_wise_online_all": "evaluation/tasks/online_all.py",
+    "per_task_scripts": "evaluation/tasks/"
+  },
   "default_judge_model": "gemini-3-pro-preview",
-  "package": "Agent Planning Benchmark evaluation code",
-  "public_task_names": [
-    "Holistic Planning",
-    "Holistic Tool-Extraneous",
-    "Holistic Unsolvable",
-    "Step-wise Planning",
-    "Step-wise Tool-Extraneous",
-    "Step-wise Tool-Broken"
-  ]
+  "data_workflow": "Download data from Hugging Face with scripts/prepare_data.py, then run prediction, judgement, and scoring scripts from evaluation/."
 }
