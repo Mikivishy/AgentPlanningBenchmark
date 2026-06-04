@@ -1,0 +1,16 @@
+{
+  "arxiv": "https://arxiv.org/abs/2606.04874",
+  "canonical_entrypoint": "evaluation/run_benchmark.py",
+  "code_only": true,
+  "dataset": "https://huggingface.co/datasets/Mikivis/AgentPlanningbBenchmark",
+  "default_judge_model": "gemini-3-pro-preview",
+  "package": "Agent Planning Benchmark evaluation code",
+  "public_task_names": [
+    "Holistic Planning",
+    "Holistic Tool-Extraneous",
+    "Holistic Unsolvable",
+    "Step-wise Planning",
+    "Step-wise Tool-Extraneous",
+    "Step-wise Tool-Broken"
+  ]
+}
